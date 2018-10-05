@@ -1,8 +1,6 @@
-# @pokemon.each do |pokemon|
-#   json.set! pokemon.id do |json|
-#     json.(pokemon, :id, :name)
-#     json.image_url asset_path(pokemon.image_url)
-#   end
-# end
-
-json.array! @pokemon
+@pokemon.each do |poke|
+  json.set! poke.id do
+    json.extract! poke, :id, :name
+    json.image_url image_path(poke.image_url)
+  end
+end
