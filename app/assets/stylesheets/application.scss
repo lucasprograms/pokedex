@@ -28,7 +28,7 @@
  }
 
  header {
-   display: flex;
+   display: flex !important;
    justify-content: center;
    background-color: $red;
    padding: 10px;

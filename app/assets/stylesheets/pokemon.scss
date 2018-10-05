@@ -1,0 +1,14 @@
+.pokemon-list-item {
+  background-color: #FFF;
+  
+  .pokemon-list-item__content {
+    &:hover {
+      transform: scale(1.25, 1.25);
+      z-index: 1001;
+      box-shadow: 0 0 15px #000;
+    }
+
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+  }
+}
