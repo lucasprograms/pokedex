@@ -1,12 +1,19 @@
-import { RECEIVE_ALL_POKEMON } from 'Actions/pokemon_actions'
+import { RECIEVE_POKEMON, RECEIVE_ALL_POKEMON } from 'Actions/pokemon_actions'
 
-const pokemonReducer = (state = {}, action) => {
+const initialState = {
+  allPokemon: {},
+  currentPokemon: {}
+}
+
+const pokemonReducer = (state = initialState, action) => {
   switch (action.type) {
     case RECEIVE_ALL_POKEMON:
-      return action.pokemon
+      return { ...state, allPokemon: action.pokemon }
+    case RECIEVE_POKEMON:
+      return { ...state, currentPokemon: action.pokemon }
     default:
       return state
   }
 }
 
-export default pokemonReducer;
+export default pokemonReducer

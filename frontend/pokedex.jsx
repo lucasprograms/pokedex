@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const rootEl = document.getElementById('root');
+  const rootEl = document.getElementById('root')
   const store = configureStore()
-  ReactDOM.render(<Root store={store} />, rootEl);
-});
+  ReactDOM.render(<Root store={store} />, rootEl)
+})

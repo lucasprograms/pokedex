@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import PokemonListItem from './pokemon-list-item'
+import PokemonListItem from './pokemon_list_item'
 
 export default class PokemonList extends Component {
   componentDidMount () {
     this.props.fetchAllPokemon()
   }
 
-  render() {
+  render () {
     return (
-      <div className="row">
+      <div className='row'>
         {this.props.pokemon.map((poke, idx) =>
           <PokemonListItem key={idx} pokemon={poke} />
         )}

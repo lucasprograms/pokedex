@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+
+  "rules": {
+    "react/prop-types": 0
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+
+  "globals": {
+    "$": false
+  }
+}

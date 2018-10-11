@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
 .pokemon-list-item {
   background-color: #FFF;
   
@@ -11,4 +13,8 @@
     cursor: pointer;
     transition: all .15s ease-in-out;
   }
+}
+
+.pokemon-detail__name {
+  font-family: 'Bowlby One SC', sans-serif;
 }

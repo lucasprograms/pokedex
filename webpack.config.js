@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   context: __dirname,
   entry: './frontend/pokedex.jsx',
-  mode: 'production',
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
     filename: 'bundle.js'
@@ -42,7 +42,11 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=/fonts/[name].[ext]'
+     },
     ]
   },
   devtool: 'source-map'
