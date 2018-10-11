@@ -29,7 +29,7 @@ export default class PokemonDetail extends Component {
             <li className="list-group-item">Defense: {pokemon.defense}</li>
             <li className="list-group-item text-capitalize">Type: {pokemon.poke_type}</li>
             <li className="list-group-item">
-              <a className="dropdown-toggle" data-toggle="collapse" href="#movesList" aria-controls="movesList">Moves:</a>
+              <a className="dropdown-toggle" data-toggle="collapse" href="#movesList" aria-controls="movesList">Moves</a>
             </li>
             <div className="collapse" id="movesList">
               {pokemon.moves ? pokemon.moves.map((move, idx) =>

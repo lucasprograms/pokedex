@@ -243,7 +243,7 @@ var ItemList = function ItemList(_ref) {
     "data-toggle": "collapse",
     href: "#itemsList",
     "aria-controls": "itemsList"
-  }, "Items:")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Items")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "collapse",
     id: "itemsList"
   }, itemIds ? itemIds.map(function (itemId, idx) {
@@ -353,7 +353,7 @@ function (_Component) {
         "data-toggle": "collapse",
         href: "#movesList",
         "aria-controls": "movesList"
-      }, "Moves:")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Moves")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "collapse",
         id: "movesList"
       }, pokemon.moves ? pokemon.moves.map(function (move, idx) {

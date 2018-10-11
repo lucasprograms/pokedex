@@ -5,7 +5,7 @@ const ItemList = ({ itemIds, items }) => {
   return (
     <div>
       <li className="list-group-item">
-          <a className="dropdown-toggle" data-toggle="collapse" href="#itemsList" aria-controls="itemsList">Items:</a>
+          <a className="dropdown-toggle" data-toggle="collapse" href="#itemsList" aria-controls="itemsList">Items</a>
         </li>
         <div className="collapse" id="itemsList">
           {itemIds ? itemIds.map((itemId, idx) => (
